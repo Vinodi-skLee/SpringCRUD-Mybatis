@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'KakaoBold';
+    src: local('../fonts/KakaoBold'),url('../fonts/KakaoBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KakaoRegular';
+    src: local('../fonts/KakaoRegular'),url('../fonts/KakaoRegular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.h1txt, .ptxt {
+	margin: 40px;
+	color: white;
+}
+
+.comment_tit {
+	margin: 40px;
+	font-family: 'KakaoBold';
+	color: white;
+}
+
+.jumbotron {
+  background-image: url('../img/headerImg.jpeg');
+  background-size: cover;
+}
+
+#list {
+	font-family: 'KakaoBold';
+	border-collapse: collapse;
+	border-radius: 15px;
+	width: 80%;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#list td, #list th {
+	padding: 8px;
+	text-align: center;
+	font-family: 'KakaoRegular';
+	border: 1px solid #ddd;
+}
+
+#list tr {
+	background-color: #f2f2f2;
+}
+
+#list tr:hover {
+	background-color: rgb(241, 219, 206);
+}
+
+#list th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #ddd;
+	color: white;
+	font-family: 'KakaoRegular';
+}
+
+.btn-light {
+	font-family: 'KakaoBold';
+	
+}
+
+.bottombtn {
+	margin-right:330px;
+}
+.row {
+	float: right;
+}
+
+.formstyle  {
+	margin: 50px;
+	padding: 30px;
+	width: 450px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+}
+
+.form_tit {
+	font-family: 'KakaoBold';
+	margin-bottom: 15px;
+}

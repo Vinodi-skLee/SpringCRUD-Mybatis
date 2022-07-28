@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Comment">
+	<insert id="insert">
+		insert into lsk_comment (writer, content) values
+		(#{writer} , #{content})
+	</insert>
+	<update id="update">
+		update lsk_comment
+		set writer=#{writer}, content=#{content} where seq=#{seq}
+	</update>
+	<delete id="delete">
+		delete from lsk_comment where seq=#{seq}
+	</delete>
+	<select id="getComment" resultType="comment">
+		select * from lsk_comment where seq=#{seq}
+	</select>
+	<select id="getCommentList" resultType="comment">
+		select * from lsk_comment order by seq desc
+	</select>
+</mapper>
